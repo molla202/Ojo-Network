@@ -18,6 +18,10 @@
 | RAM	| 8 GB |
 | Storage	| 250 GB SSD |
 
+## Oto kurulum
+```
+curl -sSL -o ojo.sh https://raw.githubusercontent.com/molla202/Ojo-Network/main/ojo.sh && chmod +x ojo.sh && bash ./ojo.sh
+```
 ## Update & Kütüphane 
 ```
 sudo apt update && sudo apt upgrade -y
