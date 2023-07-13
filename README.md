@@ -136,3 +136,21 @@ sudo systemctl restart ojod
 ```
 sudo journalctl -u ojod -fo cat
 ```
+## validator kurulumu (cüzdan adı ve validator adınızı değiştiriniz)
+not: faucet almayı unutmayın yukarıda discord linki mevcut
+```
+ojod tx staking create-validator \
+--amount 1000000uojo \
+--from cüzdan-adı \
+--commission-rate 0.1 \
+--commission-max-rate 0.2 \
+--commission-max-change-rate 0.01 \
+--min-self-delegation 1 \
+--pubkey $(ojod tendermint show-validator) \
+--moniker "node-adı" \
+--identity "" \
+--details "" \
+--chain-id ojo-devnet \
+--gas auto --gas-adjustment 1.5 \
+-y
+```
