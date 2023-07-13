@@ -134,5 +134,5 @@ sudo systemctl restart ojod
 ```
 ## Logları kontrol edelim
 ```
-sudo journalctl -u ojod -f
+sudo journalctl -u ojod -fo cat
 ```
