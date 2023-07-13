@@ -54,8 +54,8 @@ echo -e "\e[0;33m$BinaryName $($BinaryName version) Kuruldu\033[0m"
 sleep 1
 echo -e "\e[0;34mYapılandırma Dosyası Ayarları Yapılıyor\033[0m"
 curl -sSL https://raw.githubusercontent.com/molla202/Scripts/main/init.sh | bash
-wget -O $HOME/.ojo/config/addrbook.json https://testnet-files.itrocket.net/ojo/addrbook.json
-wget -O $HOME/.ojo/config/genesis.json https://testnet-files.itrocket.net/ojo/genesis.json
+wget -O $HOME/.ojo/config/addrbook.json https://raw.githubusercontent.com/molla202/Ojo-Network/main/addrbook.json
+wget -O $HOME/.ojo/config/genesis.json https://raw.githubusercontent.com/molla202/Ojo-Network/main/genesis.json
 curl -sSL https://raw.githubusercontent.com/molla202/Scripts/main/config.sh | bash
 curl -sSL https://raw.githubusercontent.com/molla202/Scripts/main/systemctl.sh | bash
 curl -sSL https://raw.githubusercontent.com/molla202/Scripts/main/startnode.sh | bash
