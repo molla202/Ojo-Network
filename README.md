@@ -65,8 +65,8 @@ ojod init "molla202" --chain-id ojo-devnet
 ```
 ## genesis ve addrbook indirelim
 ```
-wget -O $HOME/.ojo/config/genesis.json https://testnet-files.itrocket.net/ojo/genesis.json
-wget -O $HOME/.ojo/config/addrbook.json https://testnet-files.itrocket.net/ojo/addrbook.json
+wget -O $HOME/.ojo/config/addrbook.json https://raw.githubusercontent.com/molla202/Ojo-Network/main/addrbook.json
+wget -O $HOME/.ojo/config/genesis.json https://raw.githubusercontent.com/molla202/Ojo-Network/main/genesis.json
 ```
 ## seeds ve peers ekleyelim
 ```
